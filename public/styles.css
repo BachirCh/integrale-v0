@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Quattrocento+Sans:wght@400;700&family=Fira+Code:wght@300;400;500;600;700&display=swap'); */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.button-primary{
+    box-shadow: -6px 6px 0px #4338ca;
+    transform: translate(6px, -6px);
+    transition: all 140ms cubic-bezier(.25, .46, .45, .94);
+}
+.button-primary:hover{
+    background-color: #4F46E5;
+}
+
+.button-primary:active{
+    transform: none;
+    box-shadow: none;
+    background-color: #4338ca;
+}
+
+.button-secondary{
+    box-shadow: -6px 6px 0px #4338ca;
+    transform: translate(6px, -6px);
+    transition: all 140ms cubic-bezier(.25, .46, .45, .94);
+}
+.button-secondary:hover{
+    background-color: #EEF2FF;
+}
+
+.button-secondary:active{
+    transform: none;
+    box-shadow: none;
+    background-color: #E0E7FF;
+}
+.anonymous{
+    font-family: 'Fira Code', monospace;
+}
+
+.quattrocento{
+    font-family: 'Quattrocento Sans', sans-serif;
+}
