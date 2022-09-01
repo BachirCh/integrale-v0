@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="./dist/output.css" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="./images/logo.svg" />
+    <link rel="icon" type="image/x-icon" href="./public/images/logo.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -248,243 +248,208 @@
         </div>
       </div>
     </section>
+
+
     <section id="inscription">
       <!-- This example requires Tailwind CSS v2.0+ -->
-      <div class="relative overflow-hidden bg-gray-800">
-        <div class="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
-          <div
-            class="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8"
-          >
-            <div class="sm:max-w-lg">
-              <!--
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
-
-              <div class="mt-10 sm:mt-0">
-                <div class="md:grid md:grid-cols-3 md:gap-6">
-                  <!-- <div class="md:col-span-1">
-      <div class="px-4 sm:px-0">
-        <h3 class="text-lg font-medium leading-6 text-gray-900">Personal Information</h3>
-        <p class="mt-1 text-sm text-gray-600">Use a permanent address where you can receive mail.</p>
-      </div>
-    </div> -->
-                </div>
-                <div>
-                  <div class="mt-10">
-                    <!-- Decorative image grid -->
-                    <div
-                      aria-hidden="true"
-                      class="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
+<div class="relative overflow-hidden bg-gray-800">
+  <div class="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
+    <div class="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+      <div class="sm:max-w-lg">
+        <div class="mt-10 sm:mt-0">
+          <form action="https://formsubmit.co/cherratbachir@gmail.com" method="POST">
+            <div class="overflow-hidden shadow sm:rounded-md">
+              <div class="bg-gray-100 px-4 py-5 sm:p-6">
+                <div class="grid grid-cols-6 gap-6">
+                  <div class="col-span-6 sm:col-span-3">
+                    <label
+                      for="first-name"
+                      class="block text-sm font-medium text-gray-700"
+                      >Prenom</label
                     >
-                      <div
-                        class="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8"
+                    <input
+                      type="text"
+                      name="first-name"
+                      id="first-name"
+                      autocomplete="given-name"
+                      class="p-3 mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                    />
+                  </div>
+
+                  <div class="col-span-6 sm:col-span-3">
+                    <label
+                      for="last-name"
+                      class="block text-sm font-medium text-gray-700"
+                      >Nom</label
+                    >
+                    <input
+                      type="text"
+                      name="last-name"
+                      id="last-name"
+                      autocomplete="family-name"
+                      class="p-3 mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                    />
+                  </div>
+
+                  <div class="col-span-6">
+                    <label
+                      for="email-address"
+                      class="block text-sm font-medium text-gray-700"
+                      >Adresse email</label
+                    >
+                    <input
+                      type="text"
+                      name="email-address"
+                      id="email-address"
+                      autocomplete="email"
+                      class="p-3 border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                    />
+                  </div>
+
+                  <div class="col-span-6">
+                    <label
+                      for="street-address"
+                      class="block text-sm font-medium text-gray-700"
+                      >Ville</label
+                    >
+                    <input
+                      type="text"
+                      name="street-address"
+                      id="street-address"
+                      autocomplete="street-address"
+                      class="p-3 border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                    />
+                  </div>
+                </div>
+                <fieldset class="mt-6">
+                  <legend
+                    class="contents text-base font-medium text-gray-900"
+                  >
+                    Je suis intéressé par la formation
+                  </legend>
+
+                  <div class="mt-4 space-y-4">
+                    <div class="flex items-center">
+                      <input
+                        id="push-everything"
+                        name="push-notifications"
+                        type="radio"
+                        class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                      />
+                      <label
+                        for="push-everything"
+                        class="ml-3 block text-sm font-medium text-gray-700"
+                        >UX/UI design avec Figma</label
                       >
-                        <div class="flex items-center space-x-6 lg:space-x-8">
-                          <div
-                            class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8"
-                          >
-                            <div
-                              class="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100"
-                            >
-                              <img
-                                src="./public/images/dev1.jpeg"
-                                alt=""
-                                class="h-full w-full object-cover object-center"
-                              />
-                            </div>
-                            <div class="h-64 w-44 overflow-hidden rounded-lg">
-                              <img
-                                src="./public/images/dev2.jpeg"
-                                alt=""
-                                class="h-full w-full object-cover object-center"
-                              />
-                            </div>
-                          </div>
-                          <div
-                            class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8"
-                          >
-                            <div class="h-64 w-44 overflow-hidden rounded-lg">
-                              <img
-                                src="./public/images/dev3.jpeg"
-                                alt=""
-                                class="h-full w-full object-cover object-center"
-                              />
-                            </div>
-                            <div class="h-64 w-44 overflow-hidden rounded-lg">
-                              <img
-                                src="./public/images/dev4.jpeg"
-                                alt=""
-                                class="h-full w-full object-cover object-center"
-                              />
-                            </div>
-                            <div class="h-64 w-44 overflow-hidden rounded-lg">
-                              <img
-                                src="./public/images/dev5.jpeg"
-                                alt=""
-                                class="h-full w-full object-cover object-center"
-                              />
-                            </div>
-                          </div>
-                          <div
-                            class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8"
-                          >
-                            <div class="h-64 w-44 overflow-hidden rounded-lg">
-                              <img
-                                src="./public/images/dev6.jpeg"
-                                alt=""
-                                class="h-full w-full object-cover object-center"
-                              />
-                            </div>
-                            <div class="h-64 w-44 overflow-hidden rounded-lg">
-                              <img
-                                src="./public/images/dev8.jpeg"
-                                alt=""
-                                class="h-full w-full object-cover object-center"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
-                    <div class="mt-10 sm:mt-0">
-                      <form action="#" method="POST">
-                        <div class="overflow-hidden shadow sm:rounded-md">
-                          <div class="bg-gray-100 px-4 py-5 sm:p-6">
-                            <div class="grid grid-cols-6 gap-6">
-                              <div class="col-span-6 sm:col-span-3">
-                                <label
-                                  for="first-name"
-                                  class="block text-sm font-medium text-gray-700"
-                                  >Prenom</label
-                                >
-                                <input
-                                  type="text"
-                                  name="first-name"
-                                  id="first-name"
-                                  autocomplete="given-name"
-                                  class="p-3 mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                                />
-                              </div>
-
-                              <div class="col-span-6 sm:col-span-3">
-                                <label
-                                  for="last-name"
-                                  class="block text-sm font-medium text-gray-700"
-                                  >Nom</label
-                                >
-                                <input
-                                  type="text"
-                                  name="last-name"
-                                  id="last-name"
-                                  autocomplete="family-name"
-                                  class="p-3 mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                                />
-                              </div>
-
-                              <div class="col-span-6">
-                                <label
-                                  for="email-address"
-                                  class="block text-sm font-medium text-gray-700"
-                                  >Adresse email</label
-                                >
-                                <input
-                                  type="text"
-                                  name="email-address"
-                                  id="email-address"
-                                  autocomplete="email"
-                                  class="p-3 border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                                />
-                              </div>
-
-                              <div class="col-span-6">
-                                <label
-                                  for="street-address"
-                                  class="block text-sm font-medium text-gray-700"
-                                  >Ville</label
-                                >
-                                <input
-                                  type="text"
-                                  name="street-address"
-                                  id="street-address"
-                                  autocomplete="street-address"
-                                  class="p-3 border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                                />
-                              </div>
-                            </div>
-                            <fieldset class="mt-6">
-                              <legend
-                                class="contents text-base font-medium text-gray-900"
-                              >
-                                Je suis intéressé par la formation
-                              </legend>
-
-                              <div class="mt-4 space-y-4">
-                                <div class="flex items-center">
-                                  <input
-                                    id="push-everything"
-                                    name="push-notifications"
-                                    type="radio"
-                                    class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                                  />
-                                  <label
-                                    for="push-everything"
-                                    class="ml-3 block text-sm font-medium text-gray-700"
-                                    >UX/UI design avec Figma</label
-                                  >
-                                </div>
-                                <div class="flex items-center">
-                                  <input
-                                    id="push-email"
-                                    name="push-notifications"
-                                    type="radio"
-                                    class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                                  />
-                                  <label
-                                    for="push-email"
-                                    class="ml-3 block text-sm font-medium text-gray-700"
-                                    >HTML & CSS</label
-                                  >
-                                </div>
-                                <div class="flex items-center">
-                                  <input
-                                    id="push-nothing"
-                                    name="push-notifications"
-                                    type="radio"
-                                    class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                                  />
-                                  <label
-                                    for="push-nothing"
-                                    class="ml-3 block text-sm font-medium text-gray-700"
-                                    >Javascript</label
-                                  >
-                                </div>
-                              </div>
-                            </fieldset>
-                          </div>
-                          <div class="bg-gray-100 px-4 py-3 text-right sm:px-6">
-                            <button
-                              type="submit"
-                              class="flex w-full items-center justify-center rounded-md border-2 border-indigo-500 bg-white px-4 py-2 text-base font-bold text-indigo-500 md:py-2 md:px-4 md:text-lg button-secondary"
-                            >
-                              S'inscrire
-                            </button>
-                          </div>
-                        </div>
-                      </form>
+                    <div class="flex items-center">
+                      <input
+                        id="push-email"
+                        name="push-notifications"
+                        type="radio"
+                        class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                      />
+                      <label
+                        for="push-email"
+                        class="ml-3 block text-sm font-medium text-gray-700"
+                        >HTML & CSS</label
+                      >
                     </div>
+                    <div class="flex items-center">
+                      <input
+                        id="push-nothing"
+                        name="push-notifications"
+                        type="radio"
+                        class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                      />
+                      <label
+                        for="push-nothing"
+                        class="ml-3 block text-sm font-medium text-gray-700"
+                        >Javascript</label
+                      >
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="bg-gray-100 px-4 py-3 text-right sm:px-6">
+                <button
+                  type="submit"
+                  class="flex w-full items-center justify-center rounded-md border-2 border-indigo-500 bg-white px-4 py-2 text-base font-bold text-indigo-500 md:py-2 md:px-4 md:text-lg button-secondary"
+                >
+                  S'inscrire
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div>
+        <div class="mt-10">
+          <!-- Decorative image grid -->
+          <div aria-hidden="true" class="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl">
+            <div class="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
+              <div class="flex items-center space-x-6 lg:space-x-8">
+                <div
+                  class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8"
+                >
+                  <div
+                    class="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100"
+                  >
+                    <img
+                      src="./public/images/dev1.jpeg"
+                      alt=""
+                      class="h-full w-full object-cover object-center"
+                    />
+                  </div>
+                  <div class="h-64 w-44 overflow-hidden rounded-lg">
+                    <img
+                      src="./public/images/dev2.jpeg"
+                      alt=""
+                      class="h-full w-full object-cover object-center"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8"
+                >
+                  <div class="h-64 w-44 overflow-hidden rounded-lg">
+                    <img
+                      src="./public/images/dev3.jpeg"
+                      alt=""
+                      class="h-full w-full object-cover object-center"
+                    />
+                  </div>
+                  <div class="h-64 w-44 overflow-hidden rounded-lg">
+                    <img
+                      src="./public/images/dev4.jpeg"
+                      alt=""
+                      class="h-full w-full object-cover object-center"
+                    />
+                  </div>
+                  <div class="h-64 w-44 overflow-hidden rounded-lg">
+                    <img
+                      src="./public/images/dev5.jpeg"
+                      alt=""
+                      class="h-full w-full object-cover object-center"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8"
+                >
+                  <div class="h-64 w-44 overflow-hidden rounded-lg">
+                    <img
+                      src="./public/images/dev6.jpeg"
+                      alt=""
+                      class="h-full w-full object-cover object-center"
+                    />
+                  </div>
+                  <div class="h-64 w-44 overflow-hidden rounded-lg">
+                    <img
+                      src="./public/images/dev8.jpeg"
+                      alt=""
+                      class="h-full w-full object-cover object-center"
+                    />
                   </div>
                 </div>
               </div>
@@ -492,12 +457,17 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
     </section>
+
     <footer class="p-4 bg-gray-900 sm:p-6 dark:bg-gray-800">
       <div class="mx-auto max-w-screen-xl">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
-            <a href="https://flowbite.com" class="flex items-center">
+            <a href="#" class="flex items-center">
               <img
                 src="./public/images/logofull.svg"
                 class="mr-3 h-8"
@@ -576,5 +546,6 @@
         </div>
       </div>
     </footer>
+    
   </body>
 </html>
