@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Quattrocento+Sans:wght@400;700&family=Fira+Code:wght@300;400;500;600;700&display=swap'); */
 
 html {
     scroll-behavior: smooth;
@@ -42,6 +41,11 @@ body{
 }
 .anonymous{
     font-family: 'Fira Code', monospace;
+}
+.my-card{
+    box-shadow: -6px 6px 0px #4338ca;
+    transform: translate(6px, -6px);
+    transition: all 140ms cubic-bezier(.25, .46, .45, .94);
 }
 
 .quattrocento{

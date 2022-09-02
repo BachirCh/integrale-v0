@@ -66,8 +66,8 @@
                   <div class="flex items-center md:ml-10 space-x-8 md:pr-4">
                     <a
                       href="#formations"
-                      class="hidden md:flex font-medium text-gray-200 hover:text-gray-100"
-                      >Formations</a
+                      class="font-medium text-gray-200 hover:text-gray-100"
+                      >TEST</a
                     >
 
                     <!-- <a href="#" class="font-medium text-gray-200 hover:text-gray-100">Features</a>
@@ -258,8 +258,8 @@
       <div class="sm:max-w-lg">
         <div class="mt-10 sm:mt-0">
           <form action="https://formsubmit.co/cherratbachir@gmail.com" method="POST">
-            <div class="overflow-hidden rounded-lg border-2 border-indigo-500 bg-white my-card">
-              <div class="px-4 py-5 sm:p-6">
+            <div class="overflow-hidden shadow sm:rounded-md">
+              <div class="bg-gray-100 px-4 py-5 sm:p-6">
                 <div class="grid grid-cols-6 gap-6">
                   <div class="col-span-6 sm:col-span-3">
                     <label
@@ -272,7 +272,7 @@
                       name="first-name"
                       id="first-name"
                       autocomplete="given-name"
-                      class="p-3 mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 sm:text-sm" required
+                      class="p-3 mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                     />
                   </div>
 
@@ -287,7 +287,7 @@
                       name="last-name"
                       id="last-name"
                       autocomplete="family-name"
-                      class="p-3 mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 sm:text-sm"
+                      class="p-3 mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                     />
                   </div>
 
@@ -302,23 +302,22 @@
                       name="email-address"
                       id="email-address"
                       autocomplete="email"
-                      placeholder="email@example.com"
-                      class="p-3 border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 sm:text-sm" required
+                      class="p-3 border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                     />
                   </div>
 
                   <div class="col-span-6">
                     <label
-                      for="city-address"
+                      for="street-address"
                       class="block text-sm font-medium text-gray-700"
                       >Ville</label
                     >
                     <input
                       type="text"
-                      name="city-address"
-                      id="city-address"
-                      autocomplete="city-address"
-                      class="p-3 border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 sm:text-sm"
+                      name="street-address"
+                      id="street-address"
+                      autocomplete="street-address"
+                      class="p-3 border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                     />
                   </div>
                 </div>
@@ -361,7 +360,7 @@
                         id="push-nothing"
                         name="push-notifications"
                         type="radio"
-                        class="appearance-none h-4 w-4 border-gray-200 text-pink-500 focus:ring-indigo-500"
+                        class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                       />
                       <label
                         for="push-nothing"
@@ -372,7 +371,6 @@
                   </div>
                 </fieldset>
               </div>
-              <input type="hidden" name="_next" value="./public/pages/thank-you.html">
               <div class="bg-gray-100 px-4 py-3 text-right sm:px-6">
                 <button
                   type="submit"
