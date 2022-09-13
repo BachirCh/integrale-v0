@@ -51,3 +51,9 @@ body{
 .quattrocento{
     font-family: 'Quattrocento Sans', sans-serif;
 }
+
+.shadow-texture{
+    left: -12px;
+    top: -12px;
+    background-color: red;
+}
